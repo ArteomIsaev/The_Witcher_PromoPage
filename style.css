@@ -19,6 +19,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 60px;
+  margin-bottom: 90px;
 }
 
 .menu-list {
@@ -37,5 +38,51 @@ body {
 .social-link {
   margin-left: 20px;
   text-decoration: none;
+}
+
+.genre {
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.rating-number {
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 9px;
+}
+
+.main-title {
+  font-size: 76px;
+  line-height: 89px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.main-description {
+  max-width: 458px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.button {
+  background: #9D2929;
+  border-radius: 8px;
+  color: #ffffff;
+  border: none;
+  padding: 22px 72px;
 }
 /*# sourceMappingURL=style.css.map */
