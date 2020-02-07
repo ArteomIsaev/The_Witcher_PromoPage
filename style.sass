@@ -7,10 +7,11 @@ body
     justify-content: space-between
     background-image: url('/The_Witcher_PromoPage/img/background.jpg')
     background-repeat: no-repeat
-    background-position: top right 20%
+    background-position: top right
 .container
     max-width: 1140px
     margin: auto
+    width: 95%
 .header
     display: flex
     align-items: center
@@ -91,7 +92,7 @@ body
     align-items: center
     margin-bottom: 60px
     position: 
-    max-width: 420px
+    max-width: 300px
 .card
     width: 164px;
     height: 113px;
@@ -128,13 +129,14 @@ body
     background-position: center center
     background-color: transparent
     position: absolute
-    left: 935px 
+    left: calc(100% / 2.3)
 
 //footer
 .footer
     background-color: #141218
     padding: 20px 0
     margin-top: auto
+    color: #727174
 .footer-content
     display: flex
     align-items: center
@@ -142,8 +144,101 @@ body
 .footer-link
     text-decoration: none
     color: #727174
-.footer-copyright
-    color: #727174
+    margin-left: 25px
+.menu-btn
+    display: none
+//responsive
 
+@media ( max-width: 760px )
+    .play
+        display: none
+    .footer-content
+        flex-direction: column
+        align-items: flex-start
+    .copyright 
+        display: block
+        margin-bottom: 8px
+    .footer-link:first-child
+        margin-left: 0
 
+@media ( max-width: 540px  )
+    .menu-btn
+        display: block
+        width: 30px
+        height: 2px
+        background-color: #ffffff
+        position: absolute
+        top: 0px
+        right: 0px
+        margin-top: 40px
+        margin-right: 35px
+        &:before
+            content: ''
+            display: block
+            width: 30px
+            height: 2px
+            background-color: #ffffff
+            margin-top: -7px
+            transition: transform 0.2s
+        &:after
+            content: ''
+            display: block
+            width: 30px
+            height: 2px
+            background-color: #ffffff
+            margin-top: 12px
+            transition: transform 0.5s
+    .menu-btn-active
+        height: 0px
+        &:before
+            transform: rotate(45deg)
+            margin-top: 0
+        &:after
+            transform: rotate(-45deg)
+            margin-top: -2px
+    .header
+        display: none
+        flex-direction: column
+        position: absolute
+        right: 0
+        top: 0
+        background-color: #9D2929
+        width: 250px
+        padding-bottom: 40px
+    .header-active
+        display: flex
+    .logo 
+        margin-bottom: 25px
+    .menu-list
+        margin: auto
+        order: 2
+        display: flex
+        flex-direction: column
+        align-items: center
+    .menu-link
+        margin-right: 0
+        margin-bottom: 17px
+    .social
+        order: 1
+        margin-bottom: 22px
+    .social-link:first-child
+        margin-left: 0
+    .series
+        max-width: 100vh
+        margin-left: 0
+    .arrow
+        display: none
+    .main-content
+        margin-top: 196px
+    .main-title
+        font-size: 56px
+    .main-discription
+        font-size: 14px
+    .card
+        width: 140px;
+        height: 90px;
+        
+    
+    
+    
 
