@@ -59,6 +59,8 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .rating {
@@ -70,6 +72,8 @@ body {
           align-items: center;
   color: #FFFFFF;
   margin-bottom: 10px;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .rating-number {
@@ -90,6 +94,8 @@ body {
   line-height: 89px;
   color: #FFFFFF;
   margin-bottom: 10px;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .main-description {
@@ -98,17 +104,36 @@ body {
   line-height: 150%;
   color: #ffffff;
   margin-bottom: 40px;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 .button {
+  display: inline-block;
   background: #9D2929;
   border-radius: 8px;
   color: #ffffff;
   border: none;
   padding: 22px 72px;
+  text-decoration: none;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.button:active {
+  color: #ffffff;
 }
 
 .play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #9D2929;
   width: 100px;
   height: 100px;
@@ -128,9 +153,12 @@ body {
   border-radius: 50%;
   left: -16px;
   top: -16px;
+  -webkit-animation: pulse 1s ease-in-out 2s infinite;
+          animation: pulse 1s ease-in-out 2s infinite;
 }
 
 .play-img {
+  position: relative;
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
 }
@@ -143,7 +171,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 60px;
+  position: relative;
   max-width: 300px;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 .card {
