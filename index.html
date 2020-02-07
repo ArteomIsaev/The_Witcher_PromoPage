@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="swiper.min.css">
     <title>Ведьмак - официальный сайт сериала</title>
 </head>
 <body>
@@ -69,20 +70,33 @@
          </div>
          <!-- main-content -->
          <div class="series">
-            <div class="card series-1">
-               <span class="card-subtitle">Серия #1</span>
-               <h2 class="card-title">Начало конца</h2>
+            <div class="swiper-container">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper">
+                   <!-- Slides -->
+                   <div class="swiper-slide">
+                     <div class="card series-1">
+                        <span class="card-subtitle">Серия #1</span>
+                        <h2 class="card-title">Начало конца</h2>
+                     </div>
+                   </div>
+                   <div class="swiper-slide">
+                     <div class="card series-2">
+                        <span class="card-subtitle">Серия #2</span>
+                        <h2 class="card-title">Четыре знака</h2>
+                     </div>
+                   </div>
+                   <div class="swiper-slide">
+                     <div class="card series-2">
+                        <span class="card-subtitle">Серия #3</span>
+                        <h2 class="card-title">Четыре знака</h2>
+                     </div>
+                   </div>
+               </div>
             </div>
-            <div class="card series-2">
-               <span class="card-subtitle">Серия #2</span>
-               <h2 class="card-title">Четыре знака</h2>
-            </div>
-            <div class="navigation">
-               <button class="arrow"></button>
-            </div>
-            <!-- navigation -->
+            <button class="arrow"></button>
          </div>
-         <!-- series -->
+         
          
       </div>
       <!-- container -->
@@ -109,5 +123,7 @@
       <!-- /.container -->
    </footer>
 
+   <script src="/The_Witcher_PromoPage/js/swiper.min.js"></script>
+   <script src="/The_Witcher_PromoPage/js/main.js"></script>
 </body>
 </html>

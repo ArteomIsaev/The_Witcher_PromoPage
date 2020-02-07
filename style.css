@@ -142,6 +142,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 60px;
+  max-width: 420px;
 }
 
 .card {
@@ -198,6 +199,8 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-color: transparent;
+  position: absolute;
+  left: 935px;
 }
 
 .footer {
