@@ -1,7 +1,14 @@
 body
     background-color: #141218
     font-family: Roboto
-.content
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background-image: url('/The_Witcher_PromoPage/img/background.jpg')
+    background-repeat: no-repeat
+    background-position: top right 20%
+.container
     max-width: 1140px
     margin: auto
 .header
@@ -35,6 +42,9 @@ body
     font-size: 12px
     line-height: 14px
     margin-left: 9px
+.main-content
+    display: flex
+    margin-bottom: 85px
 .main-title
     font-size: 76px
     line-height: 89px
@@ -52,6 +62,84 @@ body
     color: #ffffff
     border: none
     padding: 22px 72px
-    
-    
+.play
+    background: #9D2929
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    border: none
+    position: relative
+    margin: auto
+    &:before
+        content: ''
+        width: 132px
+        height: 132px
+        background: #9D2929
+        opacity: 0.5
+        position: absolute
+        border-radius: 50%
+        left: -16px
+        top: -16px
+.play-img
+    position: 
+    transform: translateX(5px)
+
+    //SLIDER
+
+.series
+    display: flex
+    align-items: center
+    margin-bottom: 60px
+.card
+    width: 164px;
+    height: 113px;
+    border-radius: 8px;
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    padding: 13px
+    color: #fff
+    margin-right: 30px
+.card-subtitle
+    font-size: 10px
+    line-height: 12px
+    margin-bottom: 2px
+.card-title
+    font-size: 14px
+    line-height: 16px
+.series-1
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("/The_Witcher_PromoPage/img/series/series-1.jpg");
+.series-2
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("/The_Witcher_PromoPage/img/series/series-2.jpg");
+.arrow
+    width: 32px
+    height: 32px
+    border: none
+    background-image: url("/The_Witcher_PromoPage/img/series/arrow.svg")
+    background-repeat: no-repeat
+    background-position: center center
+    background-color: transparent
+
+//footer
+.footer
+    background-color: #141218
+    padding: 20px 0
+    margin-top: auto
+.footer-content
+    display: flex
+    align-items: center
+    justify-content: space-between
+.footer-link
+    text-decoration: none
+    color: #727174
+.footer-copyright
+    color: #727174
+
+
 
